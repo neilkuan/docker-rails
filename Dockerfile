@@ -14,4 +14,5 @@ WORKDIR /app
 COPY --from=builder /usr/local/bundle/ /usr/local/bundle/
 COPY . .
 EXPOSE 3000
-CMD ["rails", "server", "-b", "0.0.0.0"]
+ENTRYPOINT ["rails"]
+CMD ["server", "-b", "0.0.0.0"]

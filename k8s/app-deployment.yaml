@@ -23,7 +23,7 @@ spec:
               value: example
             - name: POSTGRES_USER
               value: postgres
-          image: ghcr.io/neilkuan/docker-rails:v0.1.0
+          image: ghcr.io/neilkuan/docker-rails:v0.1.1
           name: app
           ports:
             - containerPort: 3000
